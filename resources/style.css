@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+header {
+  display: flex;
+  border-bottom: 1px solid seashell;
+  height: 69px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+    background-color: black;
+}
+.tea-cozy {
+  height: 50px;
+  margin: 10px;
+}
+.logo, .nav {
+  width: 50%;
+  display: flex;
+}
+.nav {
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav span {
+  margin: 15px;
+}
+.nav a {
+  color: seashell;
+}
+
+/* Content */
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+top: 69px;
+  }
+
+/* First Block */
+
+#mission {
+ height: 700px;
+ width: 1200px;
+display: flex;
+align-items: center;
+background-image: url("./background.jpg");
+}
+.mission-text {
+  height: 104px;
+width: 1200px;
+background-color: black;
+}
+.mission-text h2, h4 {
+text-align: center;
+}
+.mission-text h2 {
+  font-size: 33px;
+  position: relative;
+  top: 8px;
+}
+.mission-text h4 {
+  font-size: 22px;
+  position: relative;
+  top: 28px;
+}
+
+/* Second Block */
+
+#month {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.month-text {
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.month-text h2 {
+  font-size: 33px;
+  position: relative;
+  top: 8px;
+}
+.month-text h4 {
+  font-size: 22px;
+  position: relative;
+  top: 28px;
+}
+.berry img, .spiced img, .donut img, .myrtle img, .bedford img {
+  height: 200px;
+  width: 300px;
+  padding: 5px;
+  margin: 10px;
+}
+.berry h4, .spiced h4, .donut h4, .myrtle h4, .bedford h4 {
+  padding: 5px;
+}
+
+/* Third Block */
+
+#locations {
+  background-image: url("./locations.jpg");
+  height: 500px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 69px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.locations {
+  display: flex;
+  justify-content: space-between;
+}
+.locations-text {
+  width: 100%;
+  text-align: center;
+}
+.downtown, .bayside, .oakdale {
+  background-color: black;
+  height: 274px;
+  width: 300px;
+}
+
+/* Footer */
+
+footer {
+  height: 200px;
+  position: relative;
+  top: 69px;
+}
