@@ -59,7 +59,7 @@ top: 69px;
  width: 1200px;
 display: flex;
 align-items: center;
-background-image: url("./background.jpg");
+background-image: url("../images/background.jpg");
 }
 .mission-text {
   height: 104px;
@@ -68,15 +68,14 @@ background-color: black;
 }
 .mission-text h2, h4 {
 text-align: center;
+position: relative;
 }
 .mission-text h2 {
   font-size: 33px;
-  position: relative;
   top: 8px;
 }
 .mission-text h4 {
   font-size: 22px;
-  position: relative;
   top: 28px;
 }
 
@@ -96,14 +95,15 @@ text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.month-text h2, .month-text h4 {
+  position: relative;
+}
 .month-text h2 {
   font-size: 33px;
-  position: relative;
   top: 8px;
 }
 .month-text h4 {
   font-size: 22px;
-  position: relative;
   top: 28px;
 }
 .berry img, .spiced img, .donut img, .myrtle img, .bedford img {
@@ -118,8 +118,8 @@ text-align: center;
 
 /* Third Block */
 
-#locations {
-  background-image: url("./locations.jpg");
+#third-block {
+  background-image: url("../images/locations.jpg");
   height: 500px;
   width: 1200px;
   margin: 0 auto;
@@ -127,26 +127,59 @@ text-align: center;
   top: 69px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  padding-bottom: 74px;
+}
+.locations, .locations-text {
+  width: 100%;
 }
 .locations {
   display: flex;
-  justify-content: space-between;
+  height: 274px;
+  justify-content: center;
+  align-items: center;
 }
 .locations-text {
-  width: 100%;
+  height: 38px;
   text-align: center;
+  position: relative;
+  top: 75px;
 }
 .downtown, .bayside, .oakdale {
   background-color: black;
   height: 274px;
   width: 300px;
+  margin: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.downtown h4, .bayside h4, .oakdale h4 {
+  margin: 22px 0px;
+}
+
+.downtown h3, .bayside h3, .oakdale h3 {
+  padding: 10px;
 }
 
 /* Footer */
 
 footer {
-  height: 200px;
+  height: 283px;
   position: relative;
   top: 69px;
+  width: 100%;
+}
+footer h2 {
+  margin: 10px;
+}
+footer h5 {
+  margin: 35px;
+}
+footer h2, footer h5 {
+  text-align: center;
+}
+#copyright {
+  margin: 60px 0px 0px 20px;
+  text-align: left;
 }
